@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1,
+h2 {
+  font-family: "Orbitron", sans-serif;
+}
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  min-width: 320px;
+  min-height: 100vh;
+  color: white;
+  background: linear-gradient(180deg, #051837, #04020b, #06021c);
+}
+.intro-bg {
+  background-color: #000205;
+  background-image: url("/images/intro-bg.png");
+}
+.coming-soon {
+  -webkit-mask-image: radial-gradient(
+    circle at 50% 100%,
+    black 0%,
+    transparent 0%
+  );
+  mask-image: radial-gradient(circle at 50% 100%, black 0%, transparent 0%);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-position: center 100%;
+  mask-position: center 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  opacity: 0;
+}
+
+.dribbling-bg {
+  -webkit-mask-image: radial-gradient(
+    circle at left 0%,
+    black 0%,
+    transparent 0%
+  );
+  mask-image: radial-gradient(circle at left 0%, black 0%, transparent 0%);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-position: left 0%;
+  mask-position: left 0%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  opacity: 0;
+}
+@layer utilities {
+  .text-gradient {
+    @apply text-transparent bg-clip-text bg-gradient-to-b  from-[#2ade2a] via-[#0ac96b] to-[#10da56];
+  }
+}
