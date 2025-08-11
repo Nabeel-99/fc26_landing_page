@@ -55,6 +55,21 @@ body {
   mask-repeat: no-repeat;
   opacity: 0;
 }
+.skills-bg {
+  -webkit-mask-image: radial-gradient(
+    circle at right 0%,
+    black 0%,
+    transparent 0%
+  );
+  mask-image: radial-gradient(circle at right 0%, black 0%, transparent 0%);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-position: right 0%;
+  mask-position: right 0%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  opacity: 0;
+}
 @layer utilities {
   .text-gradient {
     @apply text-transparent bg-clip-text bg-gradient-to-b  from-[#2ade2a] via-[#0ac96b] to-[#10da56];

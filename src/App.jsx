@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <Hero />
       <Features />
-      <div className="h-screen border">bro</div>
+      <div className="min-h-screen border z-10 mt-[-80vh] bg-red-500">bro</div>
     </main>
   );
 }
