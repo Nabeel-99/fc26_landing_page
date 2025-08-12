@@ -1,10 +1,11 @@
 import gsap from "gsap";
 import "./App.css";
-import Hero from "./components/Hero";
+import Hero from "./sections/Hero";
 import Navbar from "./components/Navbar";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import Features from "./components/Features";
+import Features from "./sections/Features";
+import Modes from "./sections/Modes";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 function App() {
@@ -13,7 +14,7 @@ function App() {
       <Navbar />
       <Hero />
       <Features />
-      <div className="min-h-screen border z-10 mt-[-80vh] bg-red-500">bro</div>
+      <Modes />
     </main>
   );
 }
