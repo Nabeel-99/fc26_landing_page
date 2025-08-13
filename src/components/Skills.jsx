@@ -2,7 +2,7 @@ import React from "react";
 
 const Skills = ({ skillsRef }) => {
   return (
-    <div className="h-full max-sm:flex max-sm:flex-col gap-10 absolute inset-0 p-5 lg:p-10 skills-bg z-20">
+    <div className="h-full max-sm:flex  max-sm:flex-col gap-10 absolute inset-0 p-5 lg:p-10 skills-bg z-20">
       <div className="lg:absolute left-10 lg:max-w-xl top-40">
         <p className="text-5xl will-skills-fade lg:text-8xl text-green-500 tracking-tight">
           Skills

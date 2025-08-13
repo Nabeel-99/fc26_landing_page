@@ -2,7 +2,7 @@ import React from "react";
 
 const Intro = ({ introVideoRef }) => {
   return (
-    <div className="w-screen h-screen pt-20 lg:px-10">
+    <div className="w-screen h-screen pt-20 intro-bg lg:px-10">
       <p className="text-5xl text-center will-video-fade text-gradient lg:text-left lg:text-8xl features-title tracking-tight">
         EXPERIENCE <br /> THE GAME
       </p>

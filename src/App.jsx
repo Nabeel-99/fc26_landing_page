@@ -6,6 +6,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import Features from "./sections/Features";
 import Modes from "./sections/Modes";
+import Zlatan from "./sections/Zlatan";
+import Footer from "./components/Footer";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 function App() {
@@ -15,6 +17,8 @@ function App() {
       <Hero />
       <Features />
       <Modes />
+      <Zlatan />
+      <Footer />
     </main>
   );
 }

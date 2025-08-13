@@ -20,7 +20,7 @@ const Features = () => {
     gsap.set("#features", { marginTop: "-200vh", opacity: 0 });
     gsap.set(".dribbling-bg", { opacity: 0, zIndex: 10, maskImage: "none" });
     gsap.set(".skills-bg", { opacity: 0, zIndex: 20, maskImage: "none" });
-
+    gsap.set("#modes", { marginTop: "-50vh", opacity: 0 });
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#features",
@@ -56,7 +56,7 @@ const Features = () => {
         currentTime: () => introVideoRef.current?.duration || 0,
         ease: "none",
       })
-      .to(".will-video-fade", { opacity: 0 }, "-=0.5")
+      .to(".will-video-fade", { opacity: 0 }, "-=0.2")
       .to(
         ".dribbling-bg",
         {
@@ -89,7 +89,9 @@ const Features = () => {
         duration: 1.8,
         currentTime: () => skillsRef.current?.duration || 0,
         ease: "none",
-      });
+      })
+      .to("#modes", { opacity: 1, duration: 1, ease: 0 }, "<")
+      .to("#features", { opacity: 0, duration: 1 }, "-=0.8");
   }, [isMobile]);
 
   //  preloaded videos and scroll positions sync
