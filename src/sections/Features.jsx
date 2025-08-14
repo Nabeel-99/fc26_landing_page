@@ -28,7 +28,7 @@ const Features = () => {
         start: isMobile ? "top 10%" : "center center",
         end: "+=300%",
         pinSpacing: true,
-        scrub: 2.5,
+        scrub: true,
       },
     });
 
@@ -48,7 +48,7 @@ const Features = () => {
         opacity: 0,
         ease: "expo.out",
       })
-      .from(".intro-video-bg", { duration: 1, opacity: 0 }, 0)
+      .from(".intro-video-bg", { delay: 3, duration: 1, opacity: 0 }, 0)
 
       //  play intro video & reveal dribbling
       .to(introVideoRef.current, {

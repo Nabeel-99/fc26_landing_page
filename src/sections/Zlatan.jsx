@@ -1,21 +1,33 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React, { useRef } from "react";
+import { useMediaQuery } from "react-responsive";
 
 const Zlatan = () => {
   const zlatanRef = useRef(null);
+  const isMobile = useMediaQuery({ maxWidth: 767 });
   useGSAP(() => {
-    gsap.set("#zlatan", { marginTop: "100vh", opacity: 0 });
+    gsap.set("#zlatan", { marginTop: "30vh", opacity: 0 });
+
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: "#zlatan",
+        start: "top top",
+        end: "90% top",
+        scrub: true,
+        pin: true,
+      },
+    });
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#zlatan",
-        scrub: 2.5,
-        start: "top 80%",
+        scrub: true,
+        start: "top 70%",
         end: "90% top",
         // pin: true,
       },
     });
-    tl.to("#zlatan", { marginTop: 0, opacity: 1 });
+    tl.to("#zlatan", { opacity: 1 });
     zlatanRef.current.onloadedmetadata = () => {
       tl.to(zlatanRef.current, {
         duration: 1.8,
@@ -24,15 +36,15 @@ const Zlatan = () => {
     };
   }, []);
   return (
-    <section id="zlatan" className="min-h-screen  ">
+    <section id="zlatan" className="min-h-screen w-full  ">
       <div className="">
         <video
           ref={zlatanRef}
-          src="./videos/zlatancopy-optimized.mp4"
+          src="./videos/zlatan-optimized.mp4"
           playsInline
           muted
           preload="auto"
-          className="object-cover w-full h-full"
+          className="object-cover w-screen h-screen md:h-full"
         />
       </div>
     </section>

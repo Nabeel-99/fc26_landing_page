@@ -14,7 +14,7 @@ const Hero = () => {
         trigger: "#hero",
         start: "top top",
         end: "+=300%",
-        scrub: 2.5,
+        scrub: true,
         pin: true,
         pinSpacing: true,
       },
@@ -80,18 +80,18 @@ const Hero = () => {
           <img
             src="./images/mask.svg"
             alt=""
-            className=" max-w-full will-fade lg:w-[480px]"
+            className="object-cover max-w-full  will-fade  lg:w-[480px]"
           />
           <img
             src="./images/mask.svg"
             alt=""
             className="fade-in absolute top-[20%] scale-[0.8]   max-w-full lg:w-[480px]"
           />
-          <h1 className="hero-title will-fade text-2xl lg:text-7xl text-center font-bold capitalize tracking-tight">
+          <h1 className="hero-title will-fade text-2xl md:text-7xl text-center font-bold capitalize tracking-tight">
             EXPERIENCE THE <br className="hidden lg:block" /> FUTURE OF FOOTBALL
           </h1>
           <div className="flex coming-soon  flex-col  items-center absolute top-2/5  gap-10">
-            <p className="text-center text-gradient  text-6xl lg:text-9xl lg:leading-[0.9em] tracking-tight">
+            <p className="text-center text-gradient text-6xl md:text-8xl xl:text-9xl lg:leading-[0.9em] tracking-tight">
               COMING <br />
               SEPT 26TH
             </p>

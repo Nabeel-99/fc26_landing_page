@@ -2,17 +2,17 @@ import React from "react";
 
 const Skills = ({ skillsRef }) => {
   return (
-    <div className="h-full max-sm:flex  max-sm:flex-col gap-10 absolute inset-0 p-5 lg:p-10 skills-bg z-20">
-      <div className="lg:absolute left-10 lg:max-w-xl top-40">
-        <p className="text-5xl will-skills-fade lg:text-8xl text-green-500 tracking-tight">
+    <div className="h-full max-sm:flex  max-sm:flex-col gap-10 absolute inset-0 p-5 xl:p-10 skills-bg z-20">
+      <div className="xl:absolute left-10 xl:max-w-xl top-40">
+        <p className="text-5xl lg:text-6xl will-skills-fade xl:text-8xl text-green-500 tracking-tight">
           Skills
         </p>
-        <p className="text-xl will-skills-fade max-w-lg lg:text-2xl mt-8">
+        <p className="text-xl will-skills-fade xl:max-w-lg xl:text-2xl mt-8">
           Every flick, feint, and move flows with precision—skill inputs feel
           sharper thanks to improved responsiveness and timing.
         </p>
       </div>
-      <div className="bg-white p-3 will-skills-fade w-full lg:absolute top-40 right-20 lg:rotate-5 lg:max-w-3xl">
+      <div className="bg-white mt-5 p-3 will-skills-fade w-full xl:absolute top-40 right-20 xl:rotate-5 xl:max-w-3xl">
         <video
           ref={skillsRef}
           src="./videos/skills-optimized.mp4"
