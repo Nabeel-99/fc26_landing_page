@@ -28,7 +28,9 @@ const Features = () => {
         start: isMobile ? "top 10%" : "center center",
         end: "+=300%",
         pinSpacing: true,
-        scrub: true,
+        scrub: 2.5,
+        invalidateOnRefresh: true,
+        immediateRender: false,
       },
     });
 

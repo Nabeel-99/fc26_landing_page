@@ -39,11 +39,11 @@ const Zlatan = () => {
       <div className="">
         <video
           ref={zlatanRef}
-          src="/videos/zlatan-optimized.mp4"
+          src="/videos/zlatan-slow-optimized.mp4"
           playsInline
           muted
           preload="auto"
-          className="object-cover w-screen h-screen md:h-full"
+          className="object-cover w-screen h-screen xl:h-full"
         />
       </div>
     </section>

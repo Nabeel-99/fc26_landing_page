@@ -8,7 +8,17 @@ const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
   useGSAP(() => {
     const maskPostion = isMobile ? "" : "";
-    const title = new SplitText(".hero-title", { type: "chars, words" });
+    document.fonts.ready.then(() => {
+      const title = new SplitText(".hero-title", { type: "chars, words" });
+      gsap.from(title.chars, {
+        stagger: 0.03,
+        y: 30,
+        opacity: 0,
+        duration: 1,
+        ease: "expo.out",
+      });
+    });
+
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#hero",
@@ -20,13 +30,6 @@ const Hero = () => {
       },
     });
 
-    gsap.from(title.chars, {
-      stagger: 0.03,
-      y: 30,
-      opacity: 0,
-      duration: 1,
-      ease: "expo.out",
-    });
     tl.to(".will-fade", { opacity: 0 })
       .to(".hero-image", { opacity: 0 })
       .to(

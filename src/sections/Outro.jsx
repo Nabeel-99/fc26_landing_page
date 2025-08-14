@@ -4,7 +4,6 @@ import React, { useRef, useState } from "react";
 import { FaXmark } from "react-icons/fa6";
 
 const Outro = () => {
-  gsap.set("#outro", { opacity: 1, marginTop: "10vh" });
   const [isOpen, setIsOpen] = useState(false);
   const fillRef = useRef(null);
   const textRef = useRef(null);
@@ -38,6 +37,7 @@ const Outro = () => {
   };
 
   useGSAP(() => {
+    gsap.set("#outro", { opacity: 1, marginTop: "10vh" });
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#outro",
@@ -61,7 +61,7 @@ const Outro = () => {
             alt=""
             className=" scale-[0.8]   max-w-full lg:w-[480px]"
           />
-          <p className="text-center text-gradient  text-6xl lg:text-9xl lg:leading-[0.9em] tracking-tight">
+          <p className="text-center text-gradient text-6xl md:text-8xl xl:text-9xl lg:leading-[0.9em] tracking-tight">
             COMING <br />
             SEPT 26TH
           </p>
