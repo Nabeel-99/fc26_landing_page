@@ -8,6 +8,7 @@ import { useMediaQuery } from "react-responsive";
 const Modes = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
   useGSAP(() => {
+    const modeTxt = new SplitText(".modes-text", { type: "chars, words" });
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#modes",
@@ -25,20 +26,16 @@ const Modes = () => {
       ease: "power3.inOut",
       duration: 1,
     });
-    document.fonts.ready.then(() => {
-      const modeTxt = new SplitText(".modes-text", { type: "chars, words" });
-      tl.from(".modes-title", { y: 20, opacity: 0, ease: "power3.inOut" }).from(
-        modeTxt.words,
-        {
-          stagger: 0.02,
-          opacity: 0,
-          y: 10,
-          ease: "expo.inOut",
-        },
-        "-=0.5"
-      );
-    });
-
+    tl.from(".modes-title", { y: 20, opacity: 0, ease: "power3.inOut" }).from(
+      modeTxt.words,
+      {
+        stagger: 0.02,
+        opacity: 0,
+        y: 10,
+        ease: "expo.inOut",
+      },
+      "-=0.5"
+    );
     gsap.utils.toArray(".modes-card").forEach((card) => {
       gsap.from(card, {
         scrollTrigger: {

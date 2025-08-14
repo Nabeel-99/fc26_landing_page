@@ -39,7 +39,7 @@ const Zlatan = () => {
       <div className="">
         <video
           ref={zlatanRef}
-          src="/videos/zlatan-slow-optimized.mp4"
+          src="/videos/zlatan-optimized.mp4"
           playsInline
           muted
           preload="auto"
