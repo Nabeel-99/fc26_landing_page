@@ -10,7 +10,7 @@ const Intro = ({ introVideoRef }) => {
         <div className="bg-white intro-video-bg p-3 h-full w-full xl:rotate-5 xl:max-w-3xl overflow-hidden">
           <video
             ref={introVideoRef}
-            src="./videos/intro-optimized.mp4"
+            src="/videos/intro-optimized.mp4"
             muted
             playsInline
             preload="auto"

@@ -16,7 +16,7 @@ const Dribble = ({ dribblingVideoRef }) => {
       <div className="bg-white mt-4 p-3 will-dribble-fade w-full xl:absolute top-40 left-10 xl:-rotate-5 xl:max-w-3xl">
         <video
           ref={dribblingVideoRef}
-          src="./videos/dribbling-optimized.mp4"
+          src="/videos/dribbling-optimized.mp4"
           muted
           playsInline
           preload="auto"

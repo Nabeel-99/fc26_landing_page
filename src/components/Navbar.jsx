@@ -1,4 +1,3 @@
-import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React, { useEffect, useState } from "react";
 import { FaXmark } from "react-icons/fa6";
@@ -23,7 +22,7 @@ const Navbar = () => {
   return (
     <nav className="flex items-center z-50 justify-between px-4 lg:px-0 fixed top-10 w-full  container ">
       <img
-        src="./images/logo.png"
+        src="/images/logo.png"
         alt="logo"
         className="w-10 h-10 object-cover rounded-full"
       />

@@ -15,7 +15,7 @@ const Skills = ({ skillsRef }) => {
       <div className="bg-white mt-5 p-3 will-skills-fade w-full xl:absolute top-40 right-20 xl:rotate-5 xl:max-w-3xl">
         <video
           ref={skillsRef}
-          src="./videos/skills-optimized.mp4"
+          src="/videos/skills-optimized.mp4"
           muted
           playsInline
           preload="auto"

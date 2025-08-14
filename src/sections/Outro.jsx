@@ -57,7 +57,7 @@ const Outro = () => {
       >
         <div className="flex  flex-col items-center pt-10  justify-center    w-full h-full    gap-10">
           <img
-            src="./images/mask.svg"
+            src="/images/mask.svg"
             alt=""
             className=" scale-[0.8]   max-w-full lg:w-[480px]"
           />
@@ -88,9 +88,9 @@ const Outro = () => {
           <div className="flex flex-col gap-5  items-center">
             <p className="text-3xl lg:text-5xl">Available on</p>
             <div className="flex items-center justify-center gap-8 px-36 lg:px-0">
-              <img src="./images/ps5.svg" className="w-32" />
-              <img src="./images/xbox.svg" className="w-60" />
-              <img src="./images/pc.png" className="w-20" />
+              <img src="/images/ps5.svg" className="w-32" />
+              <img src="/images/xbox.svg" className="w-60" />
+              <img src="/images/pc.png" className="w-20" />
             </div>
           </div>
         </div>

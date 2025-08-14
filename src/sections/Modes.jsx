@@ -66,24 +66,24 @@ const Modes = () => {
         <div className="flex flex-col cards gap-2">
           <ModeCard
             title="NEW PLAY MENU"
-            image={"./images/menu.jpg.avif"}
+            image={"/images/menu.jpg.avif"}
             description={` The FUT Play Menu in FC 26 is rebuilt for faster navigation, with
       a For You tab showing new, recent, and upcoming events, plus clear
       categories for all modes.`}
           />
           <ModeCard
             title="FUT CHAMPIONS"
-            image={"./images/champions.jpg.avif"}
+            image={"/images/champions.jpg.avif"}
             description={` A competitive weekend showdown—qualify directly through Rivals using Qualification Points, skip playoffs, and compete in Finals or Challengers for tier-based rewards.`}
           />
           <ModeCard
             title="CAREER MODE"
-            image={"./images/career.png.avif"}
+            image={"/images/career.png.avif"}
             description={` Dynamic, story-driven career with Manager Live Challenges, ICONs & Heroes, deeper simulations, Authentic Gameplay, and unexpected events to keep every season fresh.`}
           />
           <ModeCard
             title="PRO CLUBS"
-            image={"./images/proclubs.jpg.avif"}
+            image={"/images/proclubs.jpg.avif"}
             description={` Play as your custom Pro with Revised Clubs Progression, Archetypes, dynamic Clubs Live Events, and multi-club support—competitive and personalized like never before.`}
           />
         </div>
@@ -91,7 +91,7 @@ const Modes = () => {
       <div className="lg:sticky top-30 h-full">
         <div className="rounded-3xl xl:max-w-xl palmer p-3 border border-[#232323]">
           <img
-            src="./images/palmer.jpg.avif"
+            src="/images/palmer.jpg.avif"
             alt=""
             className="w-full h-full rounded-2xl  object-cover"
           />

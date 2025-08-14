@@ -1,11 +1,10 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React, { useRef } from "react";
-import { useMediaQuery } from "react-responsive";
 
 const Zlatan = () => {
   const zlatanRef = useRef(null);
-  const isMobile = useMediaQuery({ maxWidth: 767 });
+
   useGSAP(() => {
     gsap.set("#zlatan", { marginTop: "30vh", opacity: 0 });
 
@@ -14,14 +13,14 @@ const Zlatan = () => {
         trigger: "#zlatan",
         start: "top top",
         end: "90% top",
-        scrub: true,
+        scrub: 2.5,
         pin: true,
       },
     });
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#zlatan",
-        scrub: true,
+        scrub: 2.5,
         start: "top 70%",
         end: "90% top",
         // pin: true,
@@ -40,7 +39,7 @@ const Zlatan = () => {
       <div className="">
         <video
           ref={zlatanRef}
-          src="./videos/zlatan-optimized.mp4"
+          src="/videos/zlatan-optimized.mp4"
           playsInline
           muted
           preload="auto"
