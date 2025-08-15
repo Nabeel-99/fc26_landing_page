@@ -88,9 +88,9 @@ const Outro = () => {
           <div className="flex flex-col gap-5  items-center">
             <p className="text-3xl lg:text-5xl">Available on</p>
             <div className="flex items-center justify-center gap-8 px-36 lg:px-0">
-              <img src="/images/ps5.svg" className="w-32" />
-              <img src="/images/xbox.svg" className="w-60" />
-              <img src="/images/pc.png" className="w-20" />
+              <img loading="lazy" src="/images/ps5.svg" className="w-32" />
+              <img loading="lazy" src="/images/xbox.svg" className="w-60" />
+              <img loading="lazy" src="/images/pc.png" className="w-20" />
             </div>
           </div>
         </div>

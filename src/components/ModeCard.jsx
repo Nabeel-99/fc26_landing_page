@@ -11,6 +11,7 @@ const ModeCard = ({ image, description, title }) => {
         </div>
 
         <img
+          loading="lazy"
           src={image}
           alt=""
           className="w-full rounded-2xl object-cover backdrop-blur-2xl"

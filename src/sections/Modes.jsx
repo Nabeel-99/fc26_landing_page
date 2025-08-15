@@ -91,6 +91,7 @@ const Modes = () => {
       <div className="lg:sticky top-30 h-full">
         <div className="rounded-3xl xl:max-w-xl palmer p-3 border border-[#232323]">
           <img
+            loading="lazy"
             src="/images/palmer.jpg.avif"
             alt=""
             className="w-full h-full rounded-2xl  object-cover"
