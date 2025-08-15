@@ -1,5 +1,4 @@
 import gsap from "gsap";
-import "./App.css";
 import Hero from "./sections/Hero";
 import Navbar from "./components/Navbar";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
