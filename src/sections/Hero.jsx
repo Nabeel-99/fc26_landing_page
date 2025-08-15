@@ -94,7 +94,7 @@ const Hero = () => {
             alt=""
             className="fade-in absolute top-[20%] scale-[0.8]   max-w-full lg:w-[480px]"
           />
-          <h1 className="hero-title will-fade text-2xl md:text-7xl text-center font-bold capitalize tracking-tight">
+          <h1 className="hero-title will-fade text-4xl md:text-7xl text-center font-bold capitalize tracking-tight">
             EXPERIENCE THE <br className="hidden lg:block" /> FUTURE OF FOOTBALL
           </h1>
           <div className="flex coming-soon  flex-col  items-center absolute top-2/5  gap-10">

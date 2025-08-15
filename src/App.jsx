@@ -35,7 +35,7 @@ function App() {
       }}
       ref={lenisRef}
     >
-      <main className="flex flex-col items-center h-full w-screen ">
+      <main className="flex flex-col items-center h-full w-full overflow-x-hidden lg:overflow-visible ">
         <Navbar />
         <Hero />
         <Features />
